@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+    <button type="button" id="green">Green</button>
+    <button type="button" id="red">Red</button>
+    <button type="button" id="clear">Clear</button>
+    <button type="button" id="draw">Draw a Picture</button>
+
+    <p>
+    <button type="button" id="pointButton">Point</button>
+    <button type="button" id="triButton">Triangle</button>
+    <button type="button" id="cirButton">Circle</button>
+
+    <p>
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redS">
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenS">
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueS">
+    <p>
+    Alpha <input type="range" min="0" max="100" value="100" class="slider" id="alphaS">
+
+    <p>
+    Size <input type="range" min="5" max="40" value="100" class="slider" id="sizeS">
+    (Circle) Segment Count <input type="range" min="5" max="40" value="100" class="slider" id="scS">
+
+    <p>
+    Zander Dumont-Strom
+    <p>
+    zdumonts@ucsc.edu
+
+    <p>
+    For the creative part I decided to add a alpha slider to adjust the alpha level
+    of the paint program.
+    <p>
+    Here is my drawing: it is rotated 90 degrees and I dont know how to fix it
+    <img src="drawing_for_160.jpg">
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="ColoredPoints.js"></script>
+  </body>
+</html>
